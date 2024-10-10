@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 1505px;
+    height: 866px;
+    position: relative;
+    
+}
+.bk_image{
+    background-image: url(./images/image\ 1.png);
+    background-repeat: no-repeat;
+    width: 1505px;
+height: 866px;
+
+}
+
+.sun{
+    width: 272px;
+height: 263px;
+position: absolute;
+top: 36px;
+left: 848px;
+z-index: 1;
+transition: 4ms;
+}
+.sun:hover{
+    transform: rotate(360deg);
+}
+
+.cloud{
+    width: 200px;
+height: 150px;
+top: 40px;
+position: absolute;
+animation-name: cloud;
+animation-duration: 3s;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+
+}
+
+.tree{
+    width: 100px;
+height: 150px;
+top: 350px;
+position: absolute;
+animation-name: tree;
+animation-duration: 1s;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+
+}
+
+.mario{
+    width: 119px;
+height: 127px;
+position: absolute;
+animation-name: mario;
+animation-duration: 5s;
+animation-delay: 3s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+top: 550px;
+
+
+}
+
+.green_cap{
+    width: 122px;
+height: 131px;
+top: 730px;
+position: absolute;
+animation-name: green_cap;
+animation-duration: 5s;
+animation-delay: 2.5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+
+}
+@keyframes mario {
+   from {
+    left: 0%;
+   }
+   to{
+    left: calc(100% - 119px);
+   }
+  }
+
+  @keyframes green_cap {
+    from {
+     left: 0%;
+    }
+    to{
+     left: calc(100% - 119px);
+    }
+   } 
+   @keyframes tree {
+    from {
+     right: 0%;
+    }
+    to{
+     right: calc(100% - 100px);
+    }
+   } 
+
+   @keyframes cloud {
+    from {
+     right: 0%;
+    }
+    to{
+     right: calc(100% - 200px);
+    }
+   } 
